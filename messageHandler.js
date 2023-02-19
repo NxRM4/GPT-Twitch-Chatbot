@@ -95,7 +95,7 @@ if (isNaN(tokensHTML) || tokensHTML <= 10) {
         const sendNextMessage = () => {
           if (messageIndex < messages.length) {
             // Send the next message
-            TwitchClient.say(channel, "Response from AI:"+messages[messageIndex]);
+            TwitchClient.say(channel, ""+messages[messageIndex]);
             // Increment the message index
             messageIndex++;
             // Wait 1s before sending the next message
